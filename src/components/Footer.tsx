@@ -18,7 +18,7 @@ const Footer = () => {
               LiftoffLearning
             </h3>
             <p className="text-gray-400 mb-4">
-              Empowering the next generation through equitable STEM education and hands-on learning experiences.
+              An early-stage nonprofit working to empower the next generation through equitable STEM education and innovative learning experiences.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -27,7 +27,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="mailto:meritlowrystuart@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -49,18 +49,18 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('impact')}
+                  onClick={() => scrollToSection('founder')}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Our Impact
+                  About the Founder
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('get-involved')}
+                  onClick={() => scrollToSection('impact')}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Get Involved
+                  Our Vision
                 </button>
               </li>
               <li>
@@ -78,24 +78,36 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Get Involved</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Volunteer
-                </a>
+                <button 
+                  onClick={() => scrollToSection('get-involved')}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Join Our Mission
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Donate
-                </a>
+                <button 
+                  onClick={() => scrollToSection('get-involved')}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Support Us
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <button 
+                  onClick={() => scrollToSection('get-involved')}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Partner Schools
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Corporate Partners
-                </a>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Contact Us
+                </button>
               </li>
             </ul>
           </div>
@@ -103,9 +115,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>hello@liftofflearning.org</p>
-              <p>(555) 123-STEM</p>
-              <p>123 Innovation Drive<br />Education City, EC 12345</p>
+              <p>meritlowrystuart@gmail.com</p>
+              <p>Building partnerships nationwide</p>
+              <p>Committed to STEM education equity</p>
             </div>
           </div>
         </div>

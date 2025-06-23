@@ -7,30 +7,30 @@ const GetInvolved = () => {
   const ways = [
     {
       icon: HandHeart,
-      title: "Volunteer",
-      description: "Help us assemble kits, visit schools, or mentor students in your community.",
-      action: "Join Our Team",
+      title: "Join Our Mission",
+      description: "Help us develop resources, connect with schools, and build our community of STEM advocates.",
+      action: "Get Involved",
       gradient: "from-pink-500 to-rose-500"
     },
     {
       icon: DollarSign,
-      title: "Donate",
-      description: "Your financial support helps us create and distribute more STEM kits to schools in need.",
-      action: "Make a Donation",
+      title: "Support Our Growth",
+      description: "Your financial support helps us develop and distribute STEM resources to schools in need.",
+      action: "Support Us",
       gradient: "from-blue-500 to-blue-600"
     },
     {
       icon: Users,
-      title: "Partner",
-      description: "Are you an educator or school administrator? Let's discuss how we can support your students.",
-      action: "Become a Partner",
+      title: "Educator Partnerships",
+      description: "Are you an educator or school administrator? Let's discuss how we can work together.",
+      action: "Partner With Us",
       gradient: "from-green-500 to-green-600"
     },
     {
       icon: Mail,
-      title: "Spread the Word",
-      description: "Share our mission with your network and help us reach more students who need STEM resources.",
-      action: "Share Our Mission",
+      title: "Spread Awareness",
+      description: "Share our mission with your network and help us connect with more supporters and partners.",
+      action: "Share Our Vision",
       gradient: "from-purple-500 to-purple-600"
     }
   ];
@@ -40,11 +40,12 @@ const GetInvolved = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Join Our Movement
+            Join Our Growing Movement
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            There are many ways to support LiftoffLearning and help us bring quality STEM education to more students. 
-            Every contribution, big or small, makes a meaningful difference in a young person's life.
+            As an early-stage nonprofit, we're building a community of passionate individuals who believe in 
+            educational equity. There are many ways to support LiftoffLearning and help us develop resources 
+            that will make a meaningful difference in STEM education.
           </p>
         </div>
 
@@ -70,22 +71,23 @@ const GetInvolved = () => {
         <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-6">Ready to Make a Difference?</h3>
           <p className="text-xl mb-8 opacity-90">
-            Join hundreds of volunteers, donors, and partners who are helping us transform STEM education. 
-            Together, we can ensure that every student has the opportunity to explore, create, and innovate.
+            Join us in building the foundation for equitable STEM education. Whether you're an educator, 
+            volunteer, donor, or advocate, your support helps us create opportunities for every student 
+            to explore, create, and innovate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3"
             >
-              Start Volunteering Today
+              Join Our Community
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3"
             >
-              Donate Now
+              Support Our Mission
             </Button>
           </div>
         </div>

@@ -21,8 +21,9 @@ const Hero = () => {
               for All
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl animate-fade-in">
-              LiftoffLearning is dedicated to bringing hands-on STEM learning opportunities to Title 1 schools, 
-              fostering equity and innovation in education through our comprehensive learning kits.
+              LiftoffLearning is an early-stage nonprofit working to bring hands-on STEM learning opportunities 
+              to underserved schools. We're building partnerships and developing our first learning resources 
+              to foster equity and innovation in education.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
               <Button 
@@ -51,8 +52,8 @@ const Hero = () => {
                 className="w-full h-64 object-cover rounded-lg mb-6"
               />
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">500+ STEM Kits</h3>
-                <p className="text-gray-600">Donated to Title 1 schools nationwide</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Building Our Future</h3>
+                <p className="text-gray-600">Developing STEM resources for underserved communities</p>
               </div>
             </div>
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-blue-400 to-green-400 rounded-full opacity-20 animate-pulse"></div>
@@ -66,7 +67,7 @@ const Hero = () => {
             className="inline-flex items-center text-gray-600 hover:text-blue-600 transition-colors animate-bounce"
           >
             <ArrowDown className="w-6 h-6" />
-            <span className="ml-2 font-medium">Discover Our Impact</span>
+            <span className="ml-2 font-medium">Discover Our Vision</span>
           </button>
         </div>
       </div>

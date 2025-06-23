@@ -7,17 +7,17 @@ const About = () => {
     {
       icon: Target,
       title: "Equity in Education",
-      description: "Ensuring every student has access to quality STEM learning opportunities, regardless of their school's resources."
+      description: "Working to ensure every student has access to quality STEM learning opportunities, regardless of their school's resources."
     },
     {
       icon: Heart,
       title: "Community Impact",
-      description: "Building stronger communities by empowering students with the skills they need for tomorrow's challenges."
+      description: "Building stronger communities by developing resources that empower students with skills for tomorrow's challenges."
     },
     {
       icon: Users,
       title: "Collaborative Learning",
-      description: "Fostering teamwork and collaboration through hands-on projects that engage students in real-world problem solving."
+      description: "Creating opportunities for teamwork and collaboration through hands-on projects that engage students in real-world problem solving."
     },
     {
       icon: Lightbulb,
@@ -34,10 +34,10 @@ const About = () => {
             Our Mission & Vision
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            LiftoffLearning was founded with a simple yet powerful belief: every student deserves access to 
-            high-quality STEM education. Through our comprehensive learning kits and community partnerships, 
-            we're breaking down barriers and creating opportunities for underserved students to excel in science, 
-            technology, engineering, and mathematics.
+            LiftoffLearning is an early-stage nonprofit founded with a powerful belief: every student deserves access to 
+            high-quality STEM education. We're in the process of developing comprehensive learning resources and building 
+            community partnerships to break down barriers and create opportunities for underserved students to excel in 
+            science, technology, engineering, and mathematics.
           </p>
         </div>
 
@@ -58,23 +58,23 @@ const About = () => {
         <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">What Makes Us Different</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Current Focus</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Comprehensive STEM kits designed by educators for real classroom use</span>
+                  <span className="text-gray-700">Developing comprehensive STEM learning resources designed by educators</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Focus on Title 1 schools to address educational equity directly</span>
+                  <span className="text-gray-700">Building partnerships with underserved schools to address educational equity</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Ongoing support and resources for teachers and students</span>
+                  <span className="text-gray-700">Creating support systems and resources for teachers and students</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-gray-700">Community-driven approach with volunteer opportunities</span>
+                  <span className="text-gray-700">Establishing a community-driven approach with volunteer opportunities</span>
                 </li>
               </ul>
             </div>

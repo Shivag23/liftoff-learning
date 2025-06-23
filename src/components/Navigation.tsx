@@ -34,10 +34,16 @@ const Navigation = () => {
                 About
               </button>
               <button 
+                onClick={() => scrollToSection('founder')}
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Founder
+              </button>
+              <button 
                 onClick={() => scrollToSection('impact')}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                Impact
+                Vision
               </button>
               <button 
                 onClick={() => scrollToSection('get-involved')}
@@ -55,7 +61,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection('get-involved')}
                 className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
               >
-                Donate
+                Support Us
               </Button>
             </div>
           </div>
@@ -83,10 +89,16 @@ const Navigation = () => {
                 About
               </button>
               <button 
+                onClick={() => scrollToSection('founder')}
+                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
+              >
+                Founder
+              </button>
+              <button 
                 onClick={() => scrollToSection('impact')}
                 className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
-                Impact
+                Vision
               </button>
               <button 
                 onClick={() => scrollToSection('get-involved')}
@@ -104,7 +116,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection('get-involved')}
                 className="w-full mt-2 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
               >
-                Donate
+                Support Us
               </Button>
             </div>
           </div>

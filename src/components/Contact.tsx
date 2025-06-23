@@ -10,26 +10,26 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      detail: "hello@liftofflearning.org",
+      detail: "meritlowrystuart@gmail.com",
       description: "Send us a message anytime"
     },
     {
       icon: Phone,
-      title: "Call Us",
-      detail: "(555) 123-STEM",
-      description: "Monday - Friday, 9AM - 5PM"
+      title: "Connect",
+      detail: "Let's schedule a conversation",
+      description: "Reach out via email to connect"
     },
     {
       icon: MapPin,
-      title: "Visit Us",
-      detail: "123 Innovation Drive, Education City, EC 12345",
-      description: "Schedule an appointment"
+      title: "Location",
+      detail: "Serving communities nationwide",
+      description: "Building partnerships everywhere"
     },
     {
       icon: Clock,
-      title: "Office Hours",
-      detail: "Mon - Fri: 9AM - 5PM",
-      description: "Weekend by appointment"
+      title: "Response Time",
+      detail: "We'll get back to you soon",
+      description: "Usually within 24-48 hours"
     }
   ];
 
@@ -41,8 +41,8 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions about our programs? Want to partner with us? We'd love to hear from you. 
-            Reach out and let's discuss how we can work together to advance STEM education.
+            Have questions about our mission? Want to partner with us or get involved? We'd love to hear from you. 
+            Reach out and let's discuss how we can work together to advance STEM education equity.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ const Contact = () => {
                     </label>
                     <Textarea
                       id="message"
-                      placeholder="Tell us more about how we can help..."
+                      placeholder="Tell us more about how we can help or how you'd like to get involved..."
                       rows={6}
                       className="w-full"
                     />
