@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 const Founder = () => {
@@ -20,7 +19,7 @@ const Founder = () => {
               <div className="md:col-span-1">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" 
+                    src="/Screenshot 2025-06-24 131947.png" 
                     alt="Founder portrait" 
                     className="w-full h-80 md:h-full object-cover rounded-xl shadow-lg"
                   />
@@ -30,10 +29,10 @@ const Founder = () => {
               
               <div className="md:col-span-2">
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                  [Founder Name]
+                  Shiva Garuda
                 </h3>
                 <p className="text-xl text-blue-600 font-semibold mb-6">
-                  Founder & Executive Director
+                  Founder & President
                 </p>
                 
                 <div className="space-y-4 text-gray-700">

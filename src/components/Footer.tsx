@@ -1,4 +1,3 @@
-
 import { Heart, Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -18,7 +17,7 @@ const Footer = () => {
               LiftoffLearning
             </h3>
             <p className="text-gray-400 mb-4">
-              An early-stage nonprofit working to empower the next generation through equitable STEM education and innovative learning experiences.
+              An early-stage organization working to empower the next generation through equitable STEM education and innovative learning experiences.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -115,7 +114,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>meritlowrystuart@gmail.com</p>
+              <p>shivagaruda23@gmail.com</p>
               <p>Building partnerships nationwide</p>
               <p>Committed to STEM education equity</p>
             </div>
@@ -126,7 +125,7 @@ const Footer = () => {
           <p className="text-gray-400 flex items-center justify-center">
             Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> for STEM education equity
             <span className="mx-2">•</span>
-            © 2024 LiftoffLearning. All rights reserved.
+            © 2025 LiftoffLearning. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -21,7 +20,7 @@ const Hero = () => {
               for All
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl animate-fade-in">
-              LiftoffLearning is an early-stage nonprofit working to bring hands-on STEM learning opportunities 
+              LiftoffLearning is an early-stage organization working to bring hands-on STEM learning opportunities 
               to underserved schools. We're building partnerships and developing our first learning resources 
               to foster equity and innovation in education.
             </p>

@@ -10,7 +10,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      detail: "meritlowrystuart@gmail.com",
+      detail: "shivagaruda23@gmail.com",
       description: "Send us a message anytime"
     },
     {

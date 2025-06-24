@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,6 +57,13 @@ const Navigation = () => {
               >
                 Contact
               </button>
+              <Link
+                to="/kits"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                style={{ textDecoration: 'none' }}
+              >
+                Kits
+              </Link>
               <Button 
                 onClick={() => scrollToSection('get-involved')}
                 className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
@@ -112,6 +119,14 @@ const Navigation = () => {
               >
                 Contact
               </button>
+              <Link
+                to="/kits"
+                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                style={{ textDecoration: 'none' }}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Kits
+              </Link>
               <Button 
                 onClick={() => scrollToSection('get-involved')}
                 className="w-full mt-2 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"

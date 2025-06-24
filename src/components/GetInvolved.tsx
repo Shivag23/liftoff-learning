@@ -1,4 +1,3 @@
-
 import { HandHeart, DollarSign, Users, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -43,7 +42,7 @@ const GetInvolved = () => {
             Join Our Growing Movement
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            As an early-stage nonprofit, we're building a community of passionate individuals who believe in 
+            As an early-stage organization, we're building a community of passionate individuals who believe in 
             educational equity. There are many ways to support LiftoffLearning and help us develop resources 
             that will make a meaningful difference in STEM education.
           </p>

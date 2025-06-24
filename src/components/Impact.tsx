@@ -1,4 +1,3 @@
-
 import { Users, GraduationCap, School, Target } from "lucide-react";
 
 const Impact = () => {
@@ -37,7 +36,7 @@ const Impact = () => {
             Our Vision & Goals
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            As an early-stage nonprofit, LiftoffLearning is focused on building the foundation for meaningful 
+            As an early-stage organization, LiftoffLearning is focused on building the foundation for meaningful 
             impact in STEM education. Here's what we're working toward and how we plan to make a difference.
           </p>
         </div>

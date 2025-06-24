@@ -1,4 +1,3 @@
-
 import { Target, Heart, Users, Lightbulb } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -34,7 +33,7 @@ const About = () => {
             Our Mission & Vision
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            LiftoffLearning is an early-stage nonprofit founded with a powerful belief: every student deserves access to 
+            LiftoffLearning is an early-stage organization founded with a powerful belief: every student deserves access to 
             high-quality STEM education. We're in the process of developing comprehensive learning resources and building 
             community partnerships to break down barriers and create opportunities for underserved students to excel in 
             science, technology, engineering, and mathematics.
