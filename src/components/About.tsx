@@ -33,10 +33,9 @@ const About = () => {
             Our Mission & Vision
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            LiftoffLearning is an early-stage organization founded with a powerful belief: every student deserves access to 
-            high-quality STEM education. We're in the process of developing comprehensive learning resources and building 
-            community partnerships to break down barriers and create opportunities for underserved students to excel in 
-            science, technology, engineering, and mathematics.
+            Liftoff Learning is an early-stage organization founded with a powerful belief: every student deserves access to
+            high-quality STEM education. We're in the process of developing comprehensive learning resources
+            that will make hands-on STEM education accessible to all schools, regardless of their funding or location.
           </p>
         </div>
 

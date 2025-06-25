@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-4">
-              LiftoffLearning
+              Liftoff Learning
             </h3>
             <p className="text-gray-400 mb-4">
               An early-stage organization working to empower the next generation through equitable STEM education and innovative learning experiences.
@@ -117,7 +117,7 @@ const Footer = () => {
           <p className="text-gray-400 flex items-center justify-center">
             Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> for STEM education equity
             <span className="mx-2">•</span>
-            © 2025 LiftoffLearning. All rights reserved.
+            © 2025 Liftoff Learning. All rights reserved.
           </p>
         </div>
       </div>

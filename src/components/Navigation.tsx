@@ -22,11 +22,11 @@ const Navigation = () => {
             <div className="flex items-center">
               <img 
                 src="/liftoff-logo.png" 
-                alt="LiftoffLearning Logo" 
+                alt="Liftoff Learning Logo" 
                 className="h-10 w-auto mr-2"
               />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                LiftoffLearning
+                Liftoff Learning
               </h1>
             </div>
           </div>

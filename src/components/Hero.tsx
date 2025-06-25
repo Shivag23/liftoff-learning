@@ -19,10 +19,10 @@ const Hero = () => {
               <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"> STEM Education</span> 
               for All
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl animate-fade-in">
-              LiftoffLearning is an early-stage organization. We are working to bring hands-on STEM learning opportunities 
-              to underserved schools. We're building partnerships and developing our first learning resources 
-              to foster equity and innovation in education.
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl animate-fade-in">
+              Liftoff Learning is an early-stage organization. We are working to bring hands-on STEM learning opportunities
+              to underserved schools. We're building partnerships and developing our first learning resources to foster
+              the next generation of innovators.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
               <Button 

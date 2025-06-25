@@ -9,7 +9,7 @@ const Founder = () => {
             About the Founder
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet the passionate educator and advocate behind LiftoffLearning's mission to democratize STEM education.
+            Meet the passionate educator and advocate behind Liftoff Learning's mission to democratize STEM education.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Founder = () => {
                 
                 <div className="space-y-4 text-gray-700">
                   <p>
-                    The vision for LiftoffLearning was born from a deep commitment to educational equity and 
+                    The vision for Liftoff Learning was born from a deep commitment to educational equity and 
                     a recognition that access to quality STEM education should not depend on a school's zip code 
                     or funding level.
                   </p>
@@ -45,13 +45,13 @@ const Founder = () => {
                   <p>
                     With a background in education and a passion for innovation, our founder saw firsthand 
                     the disparities that exist in STEM education across different communities. This experience 
-                    sparked the creation of LiftoffLearning as a way to bridge these gaps and ensure that 
+                    sparked the creation of Liftoff Learning as a way to bridge these gaps and ensure that 
                     all students have the opportunity to explore, create, and discover through hands-on STEM learning.
                   </p>
                   
                   <p>
                     "Every child deserves the chance to see themselves as a scientist, engineer, or innovator. 
-                    LiftoffLearning exists to make that vision a reality, one school and one student at a time."
+                    Liftoff Learning exists to make that vision a reality, one school and one student at a time."
                   </p>
                 </div>
                 

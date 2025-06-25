@@ -1,8 +1,28 @@
-# Welcome to LiftoffLearning
+# Welcome to Liftoff Learning
 
-## Project info
+## About
 
-This is the official website for LiftoffLearning, an organization dedicated to bringing hands-on STEM education to underserved communities.
+This is the official website for Liftoff Learning, an organization dedicated to bringing hands-on STEM education to underserved communities.
+
+## Development
+
+This project is built with:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Shadcn/ui
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Build for production: `npm run build`
+
+## Contact
+
+For any questions or inquiries, please reach out to shivagaruda23@gmail.com
 
 ## How can I edit this code?
 
@@ -43,16 +63,6 @@ npm run dev
 - Select the "Codespaces" tab.
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
 ## How can I deploy this project?
 

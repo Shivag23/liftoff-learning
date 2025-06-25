@@ -42,8 +42,8 @@ const GetInvolved = () => {
             Join Our Growing Movement
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            As an early-stage organization, we're building a community of passionate individuals who believe in 
-            educational equity. There are many ways to support LiftoffLearning and help us develop resources 
+            We believe that everyone has a role to play in advancing STEM education and
+            educational equity. There are many ways to support Liftoff Learning and help us develop resources
             that will make a meaningful difference in STEM education.
           </p>
         </div>
