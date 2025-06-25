@@ -19,9 +19,16 @@ const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              LiftoffLearning
-            </h1>
+            <div className="flex items-center">
+              <img 
+                src="/liftoff-logo.png" 
+                alt="LiftoffLearning Logo" 
+                className="h-10 w-auto mr-2"
+              />
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                LiftoffLearning
+              </h1>
+            </div>
           </div>
           
           {/* Desktop Menu */}
@@ -38,12 +45,6 @@ const Navigation = () => {
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Founder
-              </button>
-              <button 
-                onClick={() => scrollToSection('impact')}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >
-                Vision
               </button>
               <button 
                 onClick={() => scrollToSection('get-involved')}
@@ -100,12 +101,6 @@ const Navigation = () => {
                 className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
                 Founder
-              </button>
-              <button 
-                onClick={() => scrollToSection('impact')}
-                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
-              >
-                Vision
               </button>
               <button 
                 onClick={() => scrollToSection('get-involved')}

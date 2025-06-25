@@ -1,11 +1,23 @@
-
+import { useState } from "react";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
   const contactInfo = [
     {
       icon: Mail,
@@ -32,6 +44,68 @@ const Contact = () => {
       description: "Usually within 24-48 hours"
     }
   ];
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Basic validation
+    if (!formData.email || !formData.message || !formData.firstName) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        "service_h0jtc49",
+        "template_den2m3l",
+        {
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          to_name: "Shiva",
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          reply_to: formData.email,
+        },
+        "VQhfJ8lbor0VykiDS"
+      );
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. We'll get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -71,16 +145,19 @@ const Contact = () => {
             <Card className="border-0 shadow-xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                        First Name
+                        First Name <span className="text-red-500">*</span>
                       </label>
                       <Input
                         id="firstName"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
                         placeholder="Enter your first name"
                         className="w-full"
+                        required
                       />
                     </div>
                     <div>
@@ -89,6 +166,8 @@ const Contact = () => {
                       </label>
                       <Input
                         id="lastName"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
                         placeholder="Enter your last name"
                         className="w-full"
                       />
@@ -97,13 +176,16 @@ const Contact = () => {
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address
+                      Email Address <span className="text-red-500">*</span>
                     </label>
                     <Input
                       id="email"
                       type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       placeholder="Enter your email address"
                       className="w-full"
+                      required
                     />
                   </div>
 
@@ -113,6 +195,8 @@ const Contact = () => {
                     </label>
                     <Input
                       id="subject"
+                      value={formData.subject}
+                      onChange={handleInputChange}
                       placeholder="What is this about?"
                       className="w-full"
                     />
@@ -120,22 +204,26 @@ const Contact = () => {
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Message
+                      Message <span className="text-red-500">*</span>
                     </label>
                     <Textarea
                       id="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
                       placeholder="Tell us more about how we can help or how you'd like to get involved..."
                       rows={6}
                       className="w-full"
+                      required
                     />
                   </div>
 
                   <Button 
                     type="submit" 
-                    size="lg" 
+                    size="lg"
+                    disabled={isSubmitting}
                     className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
