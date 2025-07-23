@@ -65,6 +65,13 @@ const Navigation = () => {
               >
                 Kits
               </Link>
+              <Link
+                to="/dr-lauer"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                style={{ textDecoration: 'none' }}
+              >
+                Dr. Lauer Meeting
+              </Link>
               <Button 
                 onClick={() => scrollToSection('get-involved')}
                 className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
@@ -121,6 +128,14 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Kits
+              </Link>
+              <Link
+                to="/dr-lauer"
+                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                style={{ textDecoration: 'none' }}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Dr. Lauer Meeting
               </Link>
               <Button 
                 onClick={() => scrollToSection('get-involved')}
