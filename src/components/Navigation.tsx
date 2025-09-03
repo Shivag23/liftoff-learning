@@ -70,7 +70,7 @@ const Navigation = () => {
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 style={{ textDecoration: 'none' }}
               >
-                Dr. Lauer Meeting
+                Education Foundation
               </Link>
               <Button 
                 onClick={() => scrollToSection('get-involved')}
@@ -135,7 +135,7 @@ const Navigation = () => {
                 style={{ textDecoration: 'none' }}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Dr. Lauer Meeting
+                Education Foundation
               </Link>
               <Button 
                 onClick={() => scrollToSection('get-involved')}

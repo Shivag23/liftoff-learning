@@ -41,28 +41,34 @@ const DrLauer = () => {
       notes: "Loved to have me come in and present the kits and bring some of my high school friends with me."
     },
     {
-      name: "Ms. Piccone", 
+      name: "Lauren Vargas", 
       school: "Mountain View Elementary",
       status: "upcoming",
-      notes: "Wants me to come in and lead one session. They have 250 kids in K-4. Will meet early August."
+      notes: "Meeting scheduled for Friday 9/5 to plan session for 250 kids in K-4."
     },
     {
       name: "Ms. Trembly",
       school: "Indian Peaks Elementary", 
-      status: "upcoming",
-      notes: "Meeting on August 7th to discuss how they can incorporate this into their STEM lessons."
+      status: "confirmed",
+      notes: "Solid plans established to work with her students and provide close to 100 catapult kits for hands-on learning."
+    },
+    {
+      name: "Dr. Glover",
+      school: "School Partnership",
+      status: "upcoming", 
+      notes: "Meeting scheduled to discuss expanded collaboration opportunities."
     },
     {
       name: "Ms. Dykes",
       school: "Northridge Elementary",
       status: "upcoming", 
-      notes: "Meet in early August"
+      notes: "Meeting scheduled to explore STEM kit integration opportunities."
     },
     {
       name: "Ms. Samara Williams",
-      school: "Boulder Valley School District",
-      status: "upcoming",
-      notes: "Will call on the 27th"
+      school: "Broomfield School District",
+      status: "confirmed",
+      notes: "Major partnership established - sending 200 catapult kits to support district-wide STEM initiatives."
     }
   ];
 
@@ -83,8 +89,8 @@ const DrLauer = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              
-              
+              Meeting with 
+              <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent"> Education Foundation</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive presentation of Liftoff Learning's catapult kit project and expansion plans
@@ -199,11 +205,31 @@ const DrLauer = () => {
                 <div>
                   <h4 className="font-semibold text-lg text-green-600 mb-4 flex items-center gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    Completed Meeting
+                    Completed Meetings
                   </h4>
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                    <div className="font-semibold text-gray-900">Mr. Glover - Longs Peak Elementary School</div>
-                    <p className="text-gray-700 mt-2">Loved to have me come in and present the kits and bring some of my high school friends with me.</p>
+                  <div className="grid gap-4">
+                    {educators.filter(educator => educator.status === 'completed').map((educator, index) => (
+                      <div key={index} className="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <div className="font-semibold text-gray-900">{educator.name} - {educator.school}</div>
+                        <p className="text-gray-700 mt-2">{educator.notes}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Confirmed Partnerships */}
+                <div>
+                  <h4 className="font-semibold text-lg text-purple-600 mb-4 flex items-center gap-2">
+                    <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                    Confirmed Partnerships
+                  </h4>
+                  <div className="grid gap-4">
+                    {educators.filter(educator => educator.status === 'confirmed').map((educator, index) => (
+                      <div key={index} className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <div className="font-semibold text-gray-900">{educator.name} - {educator.school}</div>
+                        <p className="text-gray-700 mt-2">{educator.notes}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
