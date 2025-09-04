@@ -66,7 +66,7 @@ const Navigation = () => {
                 Kits
               </Link>
               <Link
-                to="/dr-lauer"
+                to="/education-foundation-partnership"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 style={{ textDecoration: 'none' }}
               >
@@ -130,7 +130,7 @@ const Navigation = () => {
                 Kits
               </Link>
               <Link
-                to="/dr-lauer"
+                to="/education-foundation-partnership"
                 className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
                 style={{ textDecoration: 'none' }}
                 onClick={() => setIsMenuOpen(false)}
