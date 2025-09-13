@@ -73,10 +73,10 @@ const Navigation = () => {
                 Education Foundation
               </Link>
               <Button 
-                onClick={() => scrollToSection('get-involved')}
+                onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
                 className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
               >
-                Support Us
+                Donate Now
               </Button>
             </div>
           </div>
@@ -138,10 +138,10 @@ const Navigation = () => {
                 Education Foundation
               </Link>
               <Button 
-                onClick={() => scrollToSection('get-involved')}
+                onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
                 className="w-full mt-2 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
               >
-                Support Us
+                Donate Now
               </Button>
             </div>
           </div>

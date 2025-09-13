@@ -284,17 +284,17 @@ const DrLauer = () => {
               Join us in making STEM education accessible to all students, regardless of their school's resources.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/"
+              <button
+                onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
                 className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition"
               >
-                Learn More About Liftoff Learning
-              </Link>
+                Support Our Mission - Donate Now
+              </button>
               <Link
-                to="/kits"
+                to="/"
                 className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
               >
-                View Our Catapult Kit
+                Learn More About Liftoff Learning
               </Link>
             </div>
           </div>

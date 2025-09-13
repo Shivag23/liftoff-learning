@@ -78,10 +78,10 @@ const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('get-involved')}
+                  onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Support Us
+                  Donate Now
                 </button>
               </li>
               <li>

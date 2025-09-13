@@ -59,7 +59,18 @@ const GetInvolved = () => {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-gray-600 mb-6">{way.description}</p>
-                <Button className={`w-full bg-gradient-to-r ${way.gradient} hover:opacity-90 transition-opacity`}>
+                <Button 
+                  onClick={() => {
+                    if (way.title === "Support Our Growth") {
+                      window.open('https://www.coloradogives.org/story/liftofflearning', '_blank');
+                    } else if (way.title === "Spread Awareness") {
+                      window.open('https://www.coloradogives.org/story/liftofflearning', '_blank');
+                    } else {
+                      window.scrollTo({ top: document.getElementById('contact')?.offsetTop || 0, behavior: 'smooth' });
+                    }
+                  }}
+                  className={`w-full bg-gradient-to-r ${way.gradient} hover:opacity-90 transition-opacity`}
+                >
                   {way.action}
                 </Button>
               </CardContent>
@@ -77,16 +88,18 @@ const GetInvolved = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
+              onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
               className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3"
             >
-              Join Our Community
+              Donate Now
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
+              onClick={() => window.scrollTo({ top: document.getElementById('contact')?.offsetTop || 0, behavior: 'smooth' })}
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-3"
             >
-              Support Our Mission
+              Get Involved
             </Button>
           </div>
         </div>
