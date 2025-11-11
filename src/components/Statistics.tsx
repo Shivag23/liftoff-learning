@@ -11,20 +11,6 @@ const Statistics = () => {
       color: "from-blue-600 to-blue-400"
     },
     {
-      icon: Users,
-      value: "500+",
-      label: "Students Reached",
-      description: "Engaged students across multiple schools and communities",
-      color: "from-green-600 to-green-400"
-    },
-    {
-      icon: Target,
-      value: "1000+",
-      label: "Kits Distributed",
-      description: "Hands-on learning kits delivered to underserved schools",
-      color: "from-purple-600 to-purple-400"
-    },
-    {
       icon: Award,
       value: "7",
       label: "School Partnerships",
