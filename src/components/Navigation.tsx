@@ -40,6 +40,13 @@ const Navigation = () => {
               >
                 About
               </button>
+              <Link
+                to="/impact"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                style={{ textDecoration: 'none' }}
+              >
+                Impact
+              </Link>
               <button 
                 onClick={() => scrollToSection('founder')}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
@@ -64,13 +71,6 @@ const Navigation = () => {
                 style={{ textDecoration: 'none' }}
               >
                 Kits
-              </Link>
-              <Link
-                to="/education-foundation-partnership"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                style={{ textDecoration: 'none' }}
-              >
-                Education Foundation
               </Link>
               <Button 
                 onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
@@ -103,6 +103,14 @@ const Navigation = () => {
               >
                 About
               </button>
+              <Link
+                to="/impact"
+                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                style={{ textDecoration: 'none' }}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Impact
+              </Link>
               <button 
                 onClick={() => scrollToSection('founder')}
                 className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
@@ -128,14 +136,6 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Kits
-              </Link>
-              <Link
-                to="/education-foundation-partnership"
-                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
-                style={{ textDecoration: 'none' }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Education Foundation
               </Link>
               <Button 
                 onClick={() => window.open('https://www.coloradogives.org/story/liftofflearning', '_blank')}
