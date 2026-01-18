@@ -40,13 +40,7 @@ const Navigation = () => {
               >
                 About
               </button>
-              <Link
-                to="/impact"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                style={{ textDecoration: 'none' }}
-              >
-                Impact
-              </Link>
+              
               <button 
                 onClick={() => scrollToSection('founder')}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
@@ -103,14 +97,7 @@ const Navigation = () => {
               >
                 About
               </button>
-              <Link
-                to="/impact"
-                className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
-                style={{ textDecoration: 'none' }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Impact
-              </Link>
+              
               <button 
                 onClick={() => scrollToSection('founder')}
                 className="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium w-full text-left"
